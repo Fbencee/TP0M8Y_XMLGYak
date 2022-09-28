@@ -1,0 +1,37 @@
+<?DOCTYPE version="1.0" encoding="UTF-8">
+
+<?DOCTYPE kurzusfelvetel SYSTEM "kurzusfelvetel.dtd">
+
+<FB_kurzusfelvetel tanev="2022_2023 I." egyetem="ME">
+
+    <hallgato id="tp0m8y">
+        <hnev>Firtko Bence</hnev>
+        <szulev>2000-11-17</szulev>
+        <szak evf="3">Mernokinformatikus</szak>
+    </hallgato>
+
+    <kurzusok>
+        <kurzus id="GEIAL332-B">
+            <kurzusnev>Adatkezeles XML kornyzeteben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII.</hely>
+            <idopont>Kedd 12:00-13:00</idopont>
+            <oktato>Dr. Bednarik Laszlo</oktato>
+        </kurzus>
+        <kurzus id="GEIAL322-B">
+            <kurzusnev>Adatbazis rendszerek I.</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In101</hely>
+            <idopont>Kedd 08:00-10:00</idopont>
+            <oktato>Dr. Kovacs Laszlo</oktato>
+        </kurzus>
+        <kurzus id="GEIAL333-B" nyelv="angol">
+            <kurzusnev>Webalkalmazas fejlesztes-Java</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In103</hely>
+            <idopont>Szerda 10:00-12:00</idopont>
+            <oktato>Dr. Barabas Peter</oktato>
+        </kurzus>
+    </kurzusok>
+
+</FB_kurzusfelvetel>

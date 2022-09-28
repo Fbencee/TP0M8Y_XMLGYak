@@ -1,0 +1,14 @@
+<!ELEMENT kurzusfelvetel (hallgato,kurzusok)>
+<!ATTLIST kurzusfelvetel tanev CDATA "2022_2023 I.">
+<!ATTLIST kurzusfelvetel egyetem CDATA "ME">
+
+<!ELEMENT hallgato (hnev,szulev,szak)>
+<!ATTLIST hallgato id ID "tp0m8y">
+    <!ELEMENT hnev(#PCDATA)>
+    <!ELEMENT szulev(#PCDATA)>
+    <!ELEMENT szak(#PCDATA)>
+    <!ATTLIST szak evf CDATA "3">
+
+<!ELEMENT kurzusok (kurzus*)>
+    <!ELEMENT kurzus* (kurzusnev,kredit,hely,idopont,oktato)>
+    <!ATTLIST kurzus id ID "GEIAL332-B">
