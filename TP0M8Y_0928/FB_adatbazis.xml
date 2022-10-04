@@ -1,0 +1,8 @@
+<!DOCTYPE FB_adatbazis SYSTEM "FB_adatbazis.dtd">
+
+<FB_adatbazis>
+	<DOLGOZO kod="1">
+		<nev>Tamás</nev>
+		<fizetes>500000</fizetes>
+	</DOLGOZO>
+</FB_adatbazis>
