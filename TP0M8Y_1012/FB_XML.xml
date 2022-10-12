@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vendeglatas xmlns:xsi="">
+    <!-- Ettermek -->
+    <ettterem ekod="e1">
+        <nev></nev>
+        <cim></cim>
+            <varos></varos>
+            <utca></utca>
+            <hazszam></hazszam>
+        <csillag></csillag>
+    </ettterem>
+
+    <!-- Foszakacsok -->
+    <foszakacs fkod="f1" e_f="e1">
+        <nev></nev>
+        <eletkor></eletkor>
+        <vegzettseg></vegzettseg>
+        <vegzettseg></vegzettseg>
+    </foszakacs>
+
+    <!-- Szakacsok -->
+    <szakacs szkod="sz1" e_sz="e1">
+        <nev></nev>
+        <reszleg></reszleg>
+        <vegzettseg></vegzettseg>
+        <vegzettseg></vegzettseg>
+    </szakacs>
+
+    <!-- Gyakornokok -->
+    <gyakornok gykod="f1" e_gy="e1">
+        <nev></nev>
+        <gyakorlat></gyakorlat>
+            <kezdete></kezdete>
+            <idotartam></idotartam>
+        <muszak></muszak>
+        <muszak></muszak>
+    </gyakornok>
+
+    <!-- Rendelesek -->
+    <rendeles r_v="v1" e_r="e1">
+        <nev></nev>
+        <eletkor></eletkor>
+        <cim></cim>
+            <varos></varos>
+            <utca></utca>
+            <hazszam></hazszam>
+    </rendeles>
+
+    <!-- Vendegek -->
+    <vendeg vkod="v1">
+        <nev></nev>
+        <eletkor></eletkor>
+        <cim></cim>
+            <varos></varos>
+            <utca></utca>
+            <hazszam></hazszam>
+    </vendeg>
+
+
+</vendeglatas>
