@@ -3,58 +3,132 @@
 <vendeglatas xmlns:xsi="">
     <!-- Ettermek -->
     <ettterem ekod="e1">
-        <nev></nev>
-        <cim></cim>
-            <varos></varos>
-            <utca></utca>
-            <hazszam></hazszam>
-        <csillag></csillag>
+        <nev>Aranykorona</nev>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Kossuth</utca>
+            <hazszam>12</hazszam>
+        </cim>
+        <csillag>4</csillag>
     </ettterem>
 
     <!-- Foszakacsok -->
     <foszakacs fkod="f1" e_f="e1">
-        <nev></nev>
-        <eletkor></eletkor>
-        <vegzettseg></vegzettseg>
-        <vegzettseg></vegzettseg>
+        <nev>Kiss Tamás</nev>
+        <eletkor>35</eletkor>
+        <vegzettseg>Szakács</vegzettseg>
+        <vegzettseg>Pincér</vegzettseg>
+    </foszakacs>
+    
+    <foszakacs fkod="f2" e_f="e2">
+        <nev>Tóth Jószef</nev>
+        <eletkor>50</eletkor>
+        <vegzettseg>Szakács</vegzettseg>
+    </foszakacs>
+    
+    <foszakacs fkod="f3" e_f="e3">
+        <nev>Szabó Anna</nev>
+        <eletkor>40</eletkor>
+        <vegzettseg>Szakács</vegzettseg>
+        <vegzettseg>Ápolónő</vegzettseg>
     </foszakacs>
 
     <!-- Szakacsok -->
     <szakacs szkod="sz1" e_sz="e1">
-        <nev></nev>
-        <reszleg></reszleg>
-        <vegzettseg></vegzettseg>
-        <vegzettseg></vegzettseg>
+        <nev>Nagy Béla</nev>
+        <reszleg>Gourmet</reszleg>
+        <vegzettseg>Egyetem</vegzettseg>
+    </szakacs>
+    
+    <szakacs szkod="sz2" e_sz="e2">
+        <nev>Horváth Sára</nev>
+        <reszleg>Gourmet</reszleg>
+        <vegzettseg>Szakács</vegzettseg>
+    </szakacs>
+    
+    <szakacs szkod="sz3" e_sz="e3">
+        <nev>Kolompár Dezső</nev>
+        <reszleg>Gourmet</reszleg>
+        <vegzettseg>Pincér</vegzettseg>
     </szakacs>
 
     <!-- Gyakornokok -->
-    <gyakornok gykod="f1" e_gy="e1">
-        <nev></nev>
-        <gyakorlat></gyakorlat>
-            <kezdete></kezdete>
-            <idotartam></idotartam>
-        <muszak></muszak>
-        <muszak></muszak>
+    <gyakornok gykod="gy1" e_gy="e1">
+        <nev>Oláh Ibolya</nev>
+        <gyakorlat>
+            <kezdete>2022.02.10</kezdete>
+            <idotartam>3 hónap</idotartam>
+        </gyakorlat>
+        <muszak>Délelőtt</muszak>
+        <muszak>Este</muszak>
+    </gyakornok>
+    
+    <gyakornok gykod="gy2" e_gy="e2">
+        <nev>Nagy Lajos</nev>
+        <gyakorlat>
+            <kezdete>2022.10.10</kezdete>
+            <idotartam>6 hónap</idotartam>
+        </gyakorlat>
+        <muszak>Délelőtt</muszak>
+        <muszak>Este</muszak>
+    </gyakornok>
+    
+    <gyakornok gykod="gy3" e_gy="e3">
+        <nev>Tóth Tibor</nev>
+        <gyakorlat>
+            <kezdete>2022.07.12</kezdete>
+            <idotartam>8 hónap</idotartam>
+        </gyakorlat>
+        <muszak>Délelőtt</muszak>
+        <muszak>Este</muszak>
     </gyakornok>
 
     <!-- Rendelesek -->
-    <rendeles r_v="v1" e_r="e1">
-        <nev></nev>
-        <eletkor></eletkor>
-        <cim></cim>
-            <varos></varos>
-            <utca></utca>
-            <hazszam></hazszam>
+    <rendeles e_v_e="e1" e_v_v="v1">
+        <osszeg>2000</osszeg>
+        <etel>Gyros</etel>
     </rendeles>
-
+    
+    <rendeles e_v_e="e2" e_v_v="v2">
+        <osszeg>9000</osszeg>
+        <etel>Steak</etel>
+    </rendeles>
+    
+    <rendeles e_v_e="e3" e_v_v="v3">
+        <osszeg>3000</osszeg>
+        <etel>Pörkölt</etel>
+    </rendeles>
+    
+    
     <!-- Vendegek -->
     <vendeg vkod="v1">
-        <nev></nev>
-        <eletkor></eletkor>
-        <cim></cim>
-            <varos></varos>
-            <utca></utca>
-            <hazszam></hazszam>
+        <nev>Kiss Sára</nev>
+        <eletkor>23</eletkor>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Nagy Lajos</utca>
+            <hazszam>30</hazszam>
+        </cim>
+    </vendeg>
+    
+    <vendeg vkod="v2">
+        <nev>Nemecsek Ernő</nev>
+        <eletkor>40</eletkor>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Vászonfehérítő</utca>
+            <hazszam>28</hazszam>
+        </cim>
+    </vendeg>
+    
+    <vendeg vkod="v3">
+        <nev>Szép Enikő</nev>
+        <eletkor>27</eletkor>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Dráva</utca>
+            <hazszam>10</hazszam>
+        </cim>
     </vendeg>
 
 
