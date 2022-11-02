@@ -1,0 +1,17 @@
+<users>
+	<user id="1">
+		<firstname>Bence</firstname>
+		<lastname>Firtkó</lastname>
+		<profession>Mérnökinformatikus</profession>
+	</user>
+	<user id="2">
+		<firstname>Enikő</firstname>
+		<lastname>Kiss</lastname>
+		<profession>Fodrász</profession>
+	</user>
+	<user id="3">
+		<firstname>Tibor</firstname>
+		<lastname>Tóth</lastname>
+		<profession>Autószerelő</profession>
+	</user>
+</users>
