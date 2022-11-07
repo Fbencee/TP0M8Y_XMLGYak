@@ -4,15 +4,81 @@
 	<xs:element name ="bajnoksag">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name ="statisztika" type= "statisztikaTipus" maxOccurs = "unbounded"/> 
-				<xs:element name ="labdarugo" type= "labdarugoTipus" maxOccurs = "unbounded"/> 
-				<xs:element name ="csapat" type= "csapatTipus" maxOccurs = "unbounded"/> 
-				<xs:element name ="merkozes" type= "merkozesTipus" maxOccurs = "unbounded"/> 
-				<xs:element name ="stadion" type= "stadionTipus" maxOccurs = "unbounded"/> 
-				<xs:element name ="jatszik" type= "jatszikTipus" maxOccurs = "unbounded"/> 
+				<xs:element name="statisztika">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:integer" name="jatekperc" />
+							<xs:element name="lapok">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:integer" name="sarga"/>
+										<xs:element type="xs:integer" name="piros"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element type="xs:integer" name="gol" />
+							<xs:element type="xs:integer" name="golpassz" />
+							<xs:element type="xs:string" name="l_stat" />
+						</xs:sequence>
+						<xs:attribute type="xs:string" name="statisztikaID" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="labdarugo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="lnev" />
+							<xs:element type="xs:integer" name="kor" />
+							<xs:element type="xs:string" name="poszt" />
+							<xs:element type="xs:string" name="cs_l" />
+						</xs:sequence>
+						<xs:attribute type="xs:string" name="labdarugoID" use="required" />
+    				</xs:complexType>
+				</xs:element>
+				<xs:element name="csapat">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="csnev" />
+							<xs:element type="xs:string" name="edzo" />
+							<xs:element type="xs:string" name="liga" />
+							<xs:element type="xs:string" name="stad_cs" />
+						</xs:sequence>
+						<xs:attribute type="xs:string" name="csapatID" use="required" />
+    				</xs:complexType>
+				</xs:element>
+				<xs:element name="merkozes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:integer" name="hazaigolok" />
+							<xs:element type="xs:integer" name="vendeggolok" />
+							<xs:element type="xs:date" name="idopont" />
+							<xs:element type="xs:string" name="stad_m" />
+						</xs:sequence>
+						<xs:attribute type="xs:string" name="merkozesID" use="required" />
+    				</xs:complexType>
+				</xs:element>
+				<xs:element name="stadion">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="snev" />
+							<xs:element name="cim">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="varos"/>
+										<xs:element type="xs:string" name="utca"/>
+										<xs:element type="xs:integer" name="hazszam"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element type="xs:integer" name="ferohely" />
+						</xs:sequence>
+						<xs:attribute type="xs:string" name="stadionID" use="required" />
+					</xs:complexType>
+				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
-		
+
+		<!-- Kulcsok -->
+
 		<xs:key name ="statisztika_kulcs">
 			<xs:selector xpath="statisztika"/>
 			<xs:field xpath = "@statisztikaID" />
@@ -37,6 +103,8 @@
 			<xs:selector xpath="stadion"/>
 			<xs:field xpath = "@stadionID" />
 		</xs:key>
+
+		<!-- Idegen kulcsok -->
 		
 		<xs:keyref refer = "labdarugo_kulcs" name ="labdarugo_idegen_kulcs">
 			<xs:selector xpath ="statisztika" />
@@ -67,11 +135,8 @@
 			<xs:selector xpath ="jatszik" />
 			<xs:field xpath ="@m_j" />
 		</xs:keyref>
-		
-		<xs:unique name ="unique_foszakacs">
-			<xs:selector xpath ="foszakacs" />
-			<xs:field xpath ="@e_f" />
-		</xs:unique>
-		
 	</xs:element>
+
+	<!-- Sajat tipusok -->
+
 </xs:schema>
