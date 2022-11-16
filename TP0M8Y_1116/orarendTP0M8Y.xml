@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="orarendTP0M8Y_for-each.xsl"?>
+
+<tp0m8y_orarend>
+	<ora id="01" tipus="eloadas">
+		<targy>Web Technológiák</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>8</tol>
+			<ig>10</ig>
+		</idopont>
+		<helyszin>A2</helyszin>
+		<oktato>Agárdi Antia</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+	<ora id="02" tipus="eloadas">
+		<targy>Szoftver tesztelés</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>10</tol>
+			<ig>12</ig>
+		</idopont>
+		<helyszin>A2</helyszin>
+		<oktato>Dr.Hornyák Olivér</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+	<ora id="03" tipus="eloadas">
+		<targy>Integrált vállalati rendszerek</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>16</tol>
+			<ig>18</ig>
+		</idopont>
+		<helyszin>A2</helyszin>
+		<oktato>Dadvandipour Samad</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+	<ora id="04" tipus="gyakorlat">
+		<targy>Szoftver tesztelés</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>18</tol>
+			<ig>20</ig>
+		</idopont>
+		<helyszin>info</helyszin>
+		<oktato>Dr.Hornyák Olivér</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+	<ora id="05" tipus="eloadas">
+		<targy>Mesterséges Intelligenciák</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>9</tol>
+			<ig>12</ig>
+		</idopont>
+		<helyszin>A1</helyszin>
+		<oktato>Kunné Dr.Tamás Judit</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+	<ora id="06" tipus="eloadas">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>12</tol>
+			<ig>14</ig>
+		</idopont>
+		<helyszin>A2</helyszin>
+		<oktato>Bednarik László</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+	<ora id="07" tipus="gyakorlat">
+		<targy>Web Technológiák</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>18</tol>
+			<ig>20</ig>
+		</idopont>
+		<helyszin>info</helyszin>
+		<oktato>Agárdi Antia</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+	<ora id="08" tipus="gyakorlat">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>10</tol>
+			<ig>12</ig>
+		</idopont>
+		<helyszin>Infó</helyszin>
+		<oktato>Bednarik László</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+	<ora id="09" tipus="gyakorlat">
+		<targy>Webes applikációk</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>13</tol>
+			<ig>15</ig>
+		</idopont>
+		<helyszin>info</helyszin>
+		<oktato>Barabás Péter</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+	<ora id="10" tipus="gyakorlat">
+		<targy>Integrált vállalati rendszerek</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>15</tol>
+			<ig>17</ig>
+		</idopont>
+		<helyszin>info</helyszin>
+		<oktato>Kulcsárné Dr.Forrai Mónika</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+	<ora id="11" tipus="gyakorlat">
+		<targy>Mesterséges intelligencia</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>17</tol>
+			<ig>18</ig>
+		</idopont>
+		<helyszin>info</helyszin>
+		<oktato>Fazekas Levente</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+</tp0m8y_orarend>

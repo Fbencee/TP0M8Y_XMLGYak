@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="studentTP0M8Y_for-each.xsl"?>
+
+<class>
+	<student id="01">
+		<keresztnev>Bence</keresztnev>
+		<vezeteknev>Firtkó</vezeteknev>
+		<becenev>Beni</becenev>
+		<kor>22</kor>
+        <osztondij>40000</osztondij>
+	</student>
+	
+	<student id="02">
+		<keresztnev>Tamás</keresztnev>
+		<vezeteknev>Nagy</vezeteknev>
+		<becenev>Tomi</becenev>
+		<kor>30</kor>
+        <osztondij>30000</osztondij>
+	</student>
+	
+	<student id="03">
+		<keresztnev>Bernadett</keresztnev>
+		<vezeteknev>Szép</vezeteknev>
+		<becenev>Berni</becenev>
+		<kor>24</kor>
+        <osztondij>20000</osztondij>
+	</student>
+</class>

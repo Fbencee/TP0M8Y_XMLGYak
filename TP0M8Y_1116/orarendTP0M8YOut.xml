@@ -1,0 +1,139 @@
+<html>
+   <body>
+      <h2>Orarend</h2>
+      <table border="4">
+         <tr bgcolor="#9acd32">
+            <th>ID</th>
+            <th>Tipus</th>
+            <th>Targy</th>
+            <th>Nap</th>
+            <th>Tol</th>
+            <th>Ig</th>
+            <th>Helyszin</th>
+            <th>Oktato</th>
+            <th>Szak</th>
+         </tr>
+         <tr>
+            <td>01</td>
+            <td>eloadas</td>
+            <td>Web Technológiák</td>
+            <td>Hetfo</td>
+            <td>8</td>
+            <td>10</td>
+            <td>A2</td>
+            <td>Agárdi Antia</td>
+            <td>Mérnökinfó</td>
+         </tr>
+         <tr>
+            <td>02</td>
+            <td>eloadas</td>
+            <td>Szoftver tesztelés</td>
+            <td>Hetfo</td>
+            <td>10</td>
+            <td>12</td>
+            <td>A2</td>
+            <td>Dr.Hornyák Olivér</td>
+            <td>Mérnökinfó</td>
+         </tr>
+         <tr>
+            <td>03</td>
+            <td>eloadas</td>
+            <td>Integrált vállalati rendszerek</td>
+            <td>Hetfo</td>
+            <td>16</td>
+            <td>18</td>
+            <td>A2</td>
+            <td>Dadvandipour Samad</td>
+            <td>Mérnökinfó</td>
+         </tr>
+         <tr>
+            <td>04</td>
+            <td>gyakorlat</td>
+            <td>Szoftver tesztelés</td>
+            <td>Hetfo</td>
+            <td>18</td>
+            <td>20</td>
+            <td>info</td>
+            <td>Dr.Hornyák Olivér</td>
+            <td>Mérnökinfó</td>
+         </tr>
+         <tr>
+            <td>05</td>
+            <td>eloadas</td>
+            <td>Mesterséges Intelligenciák</td>
+            <td>Kedd</td>
+            <td>9</td>
+            <td>12</td>
+            <td>A1</td>
+            <td>Kunné Dr.Tamás Judit</td>
+            <td>Mérnökinfó</td>
+         </tr>
+         <tr>
+            <td>06</td>
+            <td>eloadas</td>
+            <td>Adatkezelés XML-ben</td>
+            <td>Kedd</td>
+            <td>12</td>
+            <td>14</td>
+            <td>A2</td>
+            <td>Bednarik László</td>
+            <td>Mérnökinfó</td>
+         </tr>
+         <tr>
+            <td>07</td>
+            <td>gyakorlat</td>
+            <td>Web Technológiák</td>
+            <td>Kedd</td>
+            <td>18</td>
+            <td>20</td>
+            <td>info</td>
+            <td>Agárdi Antia</td>
+            <td>Mérnökinfó</td>
+         </tr>
+         <tr>
+            <td>08</td>
+            <td>gyakorlat</td>
+            <td>Adatkezelés XML-ben</td>
+            <td>Szerda</td>
+            <td>10</td>
+            <td>12</td>
+            <td>Infó</td>
+            <td>Bednarik László</td>
+            <td>Mérnökinfó</td>
+         </tr>
+         <tr>
+            <td>09</td>
+            <td>gyakorlat</td>
+            <td>Webes applikációk</td>
+            <td>Szerda</td>
+            <td>13</td>
+            <td>15</td>
+            <td>info</td>
+            <td>Barabás Péter</td>
+            <td>Mérnökinfó</td>
+         </tr>
+         <tr>
+            <td>10</td>
+            <td>gyakorlat</td>
+            <td>Integrált vállalati rendszerek</td>
+            <td>Szerda</td>
+            <td>15</td>
+            <td>17</td>
+            <td>info</td>
+            <td>Kulcsárné Dr.Forrai Mónika</td>
+            <td>Mérnökinfó</td>
+         </tr>
+         <tr>
+            <td>11</td>
+            <td>gyakorlat</td>
+            <td>Mesterséges intelligencia</td>
+            <td>Szerda</td>
+            <td>17</td>
+            <td>18</td>
+            <td>info</td>
+            <td>Fazekas Levente</td>
+            <td>Mérnökinfó</td>
+         </tr>
+      </table>
+   </body>
+</html>
