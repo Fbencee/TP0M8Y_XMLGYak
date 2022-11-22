@@ -3,7 +3,7 @@
 <bajnoksag xmlns:xsi="">
 
     <!-- Statisztikák -->
-    <statisztika statiszikaID="stat1" l_stat="l1">
+    <statisztika statisztikaID="stat1" l_stat="l1">
         <jatekperc>300</jatekperc>
         <lapok>
             <sarga>4</sarga>
@@ -13,7 +13,7 @@
         <golpassz>5</golpassz>
     </statisztika>
 
-    <statisztika statiszikaID="stat2" l_stat="l2">
+    <statisztika statisztikaID="stat2" l_stat="l2">
         <jatekperc>1000</jatekperc>
         <lapok>
             <sarga>2</sarga>
@@ -23,7 +23,7 @@
         <golpassz>13</golpassz>
     </statisztika>
 
-    <statisztika statiszikaID="stat3" l_stat="l3">
+    <statisztika statisztikaID="stat3" l_stat="l3">
         <jatekperc>600</jatekperc>
         <lapok>
             <sarga>10</sarga>
@@ -76,21 +76,21 @@
 
     <!-- Merkőzések -->
     <merkozes merkozesID="m1" stad_m="s1">
-        <hazaigolok>2<hazaigolok>
-        <vendeggolok>0<vendeggolok>
-        <idopont>2022/10/20 18:00<idopont>
+        <hazaigolok>2</hazaigolok>
+        <vendeggolok>0</vendeggolok>
+        <idopont>2022/10/20 18:00</idopont>
     </merkozes>
 
     <merkozes merkozesID="m2" stad_m="s2">
-        <hazaigolok>0<hazaigolok>
-        <vendeggolok>0<vendeggolok>
-        <idopont>2022/09/12 20:00<idopont>
+        <hazaigolok>0</hazaigolok>
+        <vendeggolok>0</vendeggolok>
+        <idopont>2022/09/12 20:00</idopont>
     </merkozes>
 
     <merkozes merkozesID="m3" stad_m="s2">
-        <hazaigolok>1<hazaigolok>
-        <vendeggolok>2<vendeggolok>
-        <idopont>2022/09/30 21:00<idopont>
+        <hazaigolok>1</hazaigolok>
+        <vendeggolok>2</vendeggolok>
+        <idopont>2022/09/30 21:00</idopont>
     </merkozes>
 
     <!-- Stadionok -->
