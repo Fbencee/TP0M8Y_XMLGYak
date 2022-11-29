@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
+	<!-- Sajat tipusok -->
+	<xs:element name="kor">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="100"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:simpleType name="poszt">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="CAM" />
+            <xs:enumeration value="CB" />
+            <xs:enumeration value="ST" />
+			<xs:enumeration value="CDM" />
+			<xs:enumeration value="GK" />
+			<xs:enumeration value="CM" />
+			<xs:enumeration value="RM" />
+			<xs:enumeration value="LM" />
+			<xs:enumeration value="RW" />
+			<xs:enumeration value="LW" />
+        </xs:restriction>
+    </xs:simpleType>
+
+	<xs:simpleType name="pont">
+        <xs:restriction base="xs:integer">
+            <xs:enumeration value="0" />
+            <xs:enumeration value="1" />
+            <xs:enumeration value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+	<!-- Felépítés -->
 	<xs:element name ="bajnoksag">
 		<xs:complexType>
 			<xs:sequence>
@@ -18,20 +52,20 @@
 							</xs:element>
 							<xs:element type="xs:integer" name="gol" />
 							<xs:element type="xs:integer" name="golpassz" />
-							<xs:element type="xs:string" name="l_stat" />
 						</xs:sequence>
-						<xs:attribute type="statisztikaIDTipus" name="statisztikaID" use="required" />
+						<xs:attribute type="xs:string" name="l_stat" use="required" />
+						<xs:attribute type="xs:string" name="statisztikaID" use="required" />
 					</xs:complexType>
 				</xs:element>
 				<xs:element name="labdarugo">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element type="xs:string" name="lnev" />
-							<xs:element type="xs:integer" name="kor" />
-							<xs:element type="posztTipus" name="poszt" />
-							<xs:element type="xs:string" name="cs_l" />
+							<xs:element type="kor" name="kor" />
+							<xs:element type="poszt" name="poszt" />
 						</xs:sequence>
-						<xs:attribute type="labdarugoIDTipus" name="labdarugoID" use="required" />
+						<xs:attribute type="xs:string" name="cs_l" use="required" />
+						<xs:attribute type="xs:string" name="labdarugoID" use="required" />
     				</xs:complexType>
 				</xs:element>
 				<xs:element name="csapat">
@@ -40,9 +74,9 @@
 							<xs:element type="xs:string" name="csnev" />
 							<xs:element type="xs:string" name="edzo" />
 							<xs:element type="xs:string" name="liga" />
-							<xs:element type="xs:string" name="stad_cs" />
 						</xs:sequence>
-						<xs:attribute type="csapatIDTipus" name="csapatID" use="required" />
+						<xs:attribute type="xs:string" name="stad_cs" use="required" />
+						<xs:attribute type="xs:string" name="csapatID" use="required" />
     				</xs:complexType>
 				</xs:element>
 				<xs:element name="merkozes">
@@ -51,9 +85,9 @@
 							<xs:element type="xs:integer" name="hazaigolok" />
 							<xs:element type="xs:integer" name="vendeggolok" />
 							<xs:element type="xs:date" name="idopont" />
-							<xs:element type="xs:string" name="stad_m" />
 						</xs:sequence>
-						<xs:attribute type="merkozesIDTipus" name="merkozesID" use="required" />
+						<xs:attribute type="xs:string" name="stad_m" use="required" />
+						<xs:attribute type="xs:string" name="merkozesID" use="required" />
     				</xs:complexType>
 				</xs:element>
 				<xs:element name="stadion">
@@ -71,16 +105,16 @@
 							</xs:element>
 							<xs:element type="xs:integer" name="ferohely" />
 						</xs:sequence>
-						<xs:attribute type="stadionIDTipus" name="stadionID" use="required" />
+						<xs:attribute type="xs:string" name="stadionID" use="required" />
 					</xs:complexType>
 				</xs:element>
-                <xs:element name="jatszik">
+				<xs:element name="jatszik">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element type="xs:integer" name="pont" />
-                            <xs:element type="xs:string" name="m_j" />
-							<xs:element type="xs:string" name="cs_j" />
+							<xs:element type="pont" name="pont" />
 						</xs:sequence>
+						<xs:attribute type="xs:string" name="cs_j" use="required" />
+						<xs:attribute type="xs:string" name="m_j" use="required" />
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
@@ -130,7 +164,7 @@
 			<xs:field xpath ="@stad_cs" />
 		</xs:keyref>
 
-        <xs:keyref refer = "stadion_kulcs" name ="stadion_merkozes_idegen_kulcs">
+        <xs:keyref refer = "stadion_kulcs" name ="stadion_csapat_idegen_kulcs">
 			<xs:selector xpath ="merkozes" />
 			<xs:field xpath ="@stad_m" />
 		</xs:keyref>
@@ -146,51 +180,5 @@
 		</xs:keyref>
 	</xs:element>
 
-	<!-- Sajat tipusok -->
 
-    <xs:simpleType name="posztTipus">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="CAM" />
-            <xs:enumeration value="ST" />
-            <xs:enumeration value="CM" />
-            <xs:enumeration value="RM" />
-            <xs:enumeration value="LM" />
-            <xs:enumeration value="CB" />
-            <xs:enumeration value="RB" />
-            <xs:enumeration value="LB" />
-            <xs:enumeration value="GK" />
-            <xs:enumeration value="RW" />
-            <xs:enumeration value="LW" />
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="statisztikaIDTipus">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="stat([1-9])*" />
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="labdarugoIDTipus">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="l([1-9])*" />
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="csapatIDTipus">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="cs([1-9])*" />
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="merkozesIDTipus">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="m([1-9])*" />
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="stadionIDTipus">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="s([1-9])*" />
-        </xs:restriction>
-    </xs:simpleType>
 </xs:schema>
