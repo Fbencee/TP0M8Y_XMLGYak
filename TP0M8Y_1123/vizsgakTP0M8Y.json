@@ -1,0 +1,54 @@
+{
+	"_id": "TP0M8Y" , "name": "vizsgak",
+		"vizsga": {
+			"vizsga": [	
+				{
+					"kurzus": "Biztonság és védelem a számítástechnikában",
+					"helyszin": "L103",
+					"idopont" : {
+						"nap": "2022.06.16",
+						"tol": 11,
+						"ig": 13
+					},
+					"oktato": "Wagner György",
+					"jegy": "2"
+				},
+				
+				{
+					"kurzus": "Numerikus Analízis",
+					"helyszin": "T042",
+					"idopont" : {
+						"nap": "2022.05.25",
+						"tol": 11,
+						"ig": 13
+					},
+					"oktato": "Dr. Földvári Attila József",
+					"jegy": "5"
+				},
+				
+				{
+					"kurzus": "SAP-ABAP programozás",
+					"helyszin": "Info épület",
+					"idopont" : {
+						"nap": "2022.05.31",
+						"tol": 10,
+						"ig": 12
+					},
+					"oktato": "Mihály Krisztián",
+					"jegy": "5"
+				},
+				
+				{
+					"kurzus": "C# programozás",
+					"helyszin": "L102",
+					"idopont" : {
+						"nap": "2022.05.20",
+						"tol": 9,
+						"ig": 11
+					},
+					"oktato": "Smid László",
+					"jegy": "5"
+				}
+			]				
+		}		
+	}
