@@ -180,5 +180,10 @@
 		</xs:keyref>
 	</xs:element>
 
+	<xs:unique name="unique_stadion_csapat">
+            <xs:selector xpath="csapat" />
+            <xs:field xpath="@stad_cs" />
+    </xs:unique>
+
 
 </xs:schema>
